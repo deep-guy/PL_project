@@ -1,6 +1,6 @@
 % This code contains the 'main' function, and interfaces with the user.
 
-:- use_module(calculate, [find_regression_line/3]).
+:- use_module(calculate, [find_regression_line/4]).
 :- use_module(input, [read_file/3]).
 
 % Calculate y, given x, slope and intercept
@@ -26,6 +26,10 @@ main :-
     read(Fname),
     read_file(Fname, Xlist, Ylist),
     write('File read successfully'), nl,
-    find_regression_line(Xlist, Ylist, Param),
+    find_regression_line(Xlist, Ylist, Param, Err),
     write('Hypothesis parameters successfully calculated.'), nl,
+    write('Hypothesis matrix is '),
+    write(Param), nl,
+    write('Sum of squared errors is '),
+    write(Err), nl,
     value_calc(0, Param).
