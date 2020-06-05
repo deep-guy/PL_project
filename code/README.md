@@ -13,3 +13,10 @@
 * run format.py
 * select required column indices
 * the data will be saved in 'test_data.csv'
+
+
+### Code Structure:-
+
+* ‘input.pl’: Contains code for reading x and y values from a csv file and formatting them as appropriate X and Y matrices.
+* ‘calculate.pl’: Contains code for matrix operations such as addition, subtraction, multiplication, and performs these operations on input to generate Hypothesis Parameters and Sum of Squared Errors.
+* ‘main.pl’: Interfaces with the user.

@@ -4,7 +4,7 @@
 :- module(input, [read_file/3]).
 
 % Using inbuilt library for reading CSV files
-:- use_module(library(csv)).
+:- use_module(library(csv), [csv_read_file/3]).
 :- use_module(library(clpfd), [transpose/2]).
 
 % Function to append one list to the end of another
