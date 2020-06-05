@@ -1,4 +1,4 @@
-# Two dimensional least squares linear regressor using matrix multiplication
+# Bivariate least squares linear regressor using matrix multiplication
 
 ### Usage:-
 
